@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcas Manejadas</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .slick-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-slide img {
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: #333;
+  }
+  .slick-dots li button:before {
+    color: #333;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #007bff;
+  }
+  @media (max-width: 768px) {
+    .slick-slide img {
+      max-height: 300px;
+    }
+  }
+  @media (max-width: 480px) {
+    .slick-slide img {
+      max-height: 200px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>MOOC DE INGIENERIA ECONOMICA </h2>
+  <h2>Evidencias</h2>
+  <h3>Jorge Meza</h3>
+  <div class="slick-slider">
+    <div><img src="../recursos/05-22 071032.png" alt="Imagen 1"></div>
+    <div><img src="../recursos/cfe.png" alt="Imagen 3"></div>
+    <div><img src="../recursos/4nc48n.png" alt="Imagen 4"></div>
+    <div><img src="../recursos/4v4.png" alt="Imagen 5"></div>   
+    <div><img src="../recursos/c.cñwñ.png" alt="Imagen 1"></div>
+    <div><img src="../recursos/rdr.png" alt="Imagen 6"></div>
+    <div><img src="../recursos/crc.png" alt="Imagen 7"></div>
+    <div><img src="../recursos/ded.png" alt="Imagen 8"></div>
+    <div><img src="../recursos/evbte.png" alt="Imagen 9"></div>
+    <div><img src="../recursos/f3f3.png" alt="Imagen 10"></div>
+    <div><img src="../recursos/fwf.png" alt="Imagen 11"></div>
+    <div><img src="../recursos/g4g4.png" alt="Imagen 12"></div>
+    <div><img src="../recursos/gegte.png" alt="Imagen 13"></div>
+    <div><img src="../recursos/vekmvo.png" alt="Imagen 2"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.slick-slider').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: true,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      pauseOnHover: false,
+      centerMode: true,
+      variableWidth: true,
+      adaptiveHeight: true
+    });
+  });
+</script>
+
+</body>
+</html>
